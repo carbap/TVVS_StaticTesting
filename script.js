@@ -1,6 +1,7 @@
 /* eslint-disable */
 
 function updateFirstName(firstname){
+    console.log(firstname + " firstname")
     document.getElementById("firstNameInput").innerHTML = firstname;
 }
 
@@ -9,6 +10,8 @@ function updateLastName(lastname){
 }
 
 document.getElementById('updateBtn').addEventListener("click", function(){
-    eval('updateFirstName(" ' + unescape(document.getElementById("firstname").value) + ' ");')
-    eval('updateLastName(" ' + unescape(document.getElementById("lastname").value) + ' ");')
+    eval('updateFirstName(" ' + document.getElementById("firstname").value + ' ");')
+    eval('updateLastName(" ' + document.getElementById("lastname").value + ' ");')
 });
+
+// unescape(document.getElementById("firstname").value)
