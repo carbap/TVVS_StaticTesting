@@ -8,7 +8,7 @@ function updateLastName(lastname) {
     document.getElementById("lastNameInput").innerHTML = lastname;
 }
 
-document.getElementById('updateBtn').addEventListener("click", function() {
-    eval('updateFirstName(" ' + unescape(document.getElementById("firstname").value) + ' ");')
-    eval('updateLastName(" ' + unescape(document.getElementById("lastname").value) + ' ");')
+document.getElementById('updateBtn').addEventListener("click", function(){
+    eval('updateFirstName(" ' + document.getElementById("firstname").value + ' ");')
+    eval('updateLastName(" ' + document.getElementById("lastname").value + ' ");')
 });
