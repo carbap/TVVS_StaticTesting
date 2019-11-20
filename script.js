@@ -1,6 +1,6 @@
 /* eslint-disable */
-function updateFirstName(firstname){
-    console.log(firstname + " firstname")
+
+function updateFirstName(firstname) {
     document.getElementById("firstNameInput").innerHTML = firstname;
 }
 
